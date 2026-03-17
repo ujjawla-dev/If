@@ -46,7 +46,7 @@ export default function LoginPage() {
             Forget your password?{" "}
             <Link
               href="/forgot-password"
-              className="text-[#E6663E] hover:underline"
+              className="text-[#273279] hover:underline"
             >
               Reset Password
             </Link>
