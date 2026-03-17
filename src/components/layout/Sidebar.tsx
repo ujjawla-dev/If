@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from "next/image";
 import { Home, ClipboardList, User, LayoutGrid,MessageSquare, UserPlus, Settings, LogOut, HelpCircle, Bell } from 'lucide-react';
 
 export default function Sidebar() {
@@ -18,9 +19,15 @@ export default function Sidebar() {
       {/* Logo Area */}
       <div className="p-6 flex items-center gap-3">
         <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-white to-gray-400 flex items-center justify-center text-black font-bold text-xl leading-none">
-          J
+           <Image
+      src="/logo.png"   
+      alt="logo"
+      width={32}
+      height={32}
+      className="object-cover"
+    />
         </div>
-        <span className="text-xl font-semibold tracking-wide">JeledOrla</span>
+        <span className="text-xl font-semibold tracking-wide">If</span>
       </div>
 
       {/* User Profile Snippet */}
