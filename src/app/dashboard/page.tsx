@@ -3,7 +3,7 @@ import { RefreshCw, PanelLeft, LayoutGrid, LayoutTemplate, Menu, Plus, ImagePlus
 
 export default function DashboardPage() {
   return (
-    <div className="flex flex-col gap-8 max-w-6xl mx-auto pb-10">
+    <div className="flex flex-col gap-6 w-full pb-10">
       
       {/* Header text */}
       <div className="flex items-center justify-between">
