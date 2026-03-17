@@ -8,7 +8,7 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="relative h-screen w-full flex text-white overflow-hidden bg-[#151733]">
+    <div className="relative h-screen w-full flex text-white overflow-hidden">
       {/* Background Image */}
       <div className="bg-img absolute inset-0 -z-30 bg-cover bg-left bg-no-repeat" />
 

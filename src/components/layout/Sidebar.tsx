@@ -1,19 +1,20 @@
 import React from 'react';
 import Link from 'next/link';
-import { Home, ClipboardList, User, MessageSquare, UserPlus, Settings, LogOut, HelpCircle, Bell } from 'lucide-react';
+import { Home, ClipboardList, User, LayoutGrid,MessageSquare, UserPlus, Settings, LogOut, HelpCircle, Bell } from 'lucide-react';
 
 export default function Sidebar() {
   const navItems = [
     { name: 'Dashboard', icon: Home, href: '/dashboard', active: true },
     { name: 'Questionnaire', icon: ClipboardList, href: '/questionnaire' },
     { name: 'Profile', icon: User, href: '/profile', badge: 2 },
+    { name: 'Category', icon:LayoutGrid , href: '/category' },
     { name: 'Messages', icon: MessageSquare, href: '/messages' },
     { name: 'Invites', icon: UserPlus, href: '/invites' },
     { name: 'Settings', icon: Settings, href: '/settings' },
   ];
 
   return (
-    <aside className="w-64 h-full flex flex-col border-r border-white/10 bg-[#151733]/60 backdrop-blur-md relative z-20">
+    <aside className="w-64 h-full flex flex-col border-r border-white/10  backdrop-blur-md relative z-20">
       {/* Logo Area */}
       <div className="p-6 flex items-center gap-3">
         <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-white to-gray-400 flex items-center justify-center text-black font-bold text-xl leading-none">
