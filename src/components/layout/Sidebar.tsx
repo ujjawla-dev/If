@@ -3,7 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from "next/image";
 import { usePathname } from 'next/navigation';
-import { Home, ClipboardList, User, LayoutGrid,MessageSquare, UserPlus, Settings, LogOut, HelpCircle, Bell } from 'lucide-react';
+import { Home, ClipboardList, User,LayoutGrid, LayoutList,MessageSquare, UserPlus, Settings, LogOut, HelpCircle, Bell } from 'lucide-react';
 
 export default function Sidebar() {
   const pathname = usePathname();
@@ -13,7 +13,7 @@ export default function Sidebar() {
     { name: 'Questionnaire', icon: ClipboardList, href: '/questionnaire' },
     { name: 'Profile', icon: User, href: '/user-dashboard/profile', badge: 2 },
     { name: 'Subscription', icon: LayoutGrid, href: '/user-dashboard/subscription' },
-    { name: 'Category', icon: LayoutGrid, href: '/category' },
+    { name: 'Category', icon: LayoutList, href: '/category' },
     { name: 'Messages', icon: MessageSquare, href: '/messages' },
     { name: 'Invites', icon: UserPlus, href: '/invites' },
     { name: 'Settings', icon: Settings, href: '/settings' },

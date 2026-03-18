@@ -1,5 +1,5 @@
 import React from 'react';
-import { RefreshCw, PanelLeft, LayoutGrid, LayoutTemplate, Menu, Plus, ImagePlus, Mic, Image as ImageIcon, Send } from 'lucide-react';
+import { RefreshCw, PanelLeft, LayoutGrid, LayoutTemplate, Menu, Plus, ImagePlus, Mic, ImageIcon, Send } from 'lucide-react';
 import DashboardWrapper from '@/components/layout/DashboardWrapper';
 
 export default function DashboardPage() {
@@ -14,7 +14,7 @@ export default function DashboardPage() {
               Hello <span className="font-semibold text-white">Jesica</span>, welcome back!
             </h1>
             <p className="text-white/60 mt-1">
-              Here's what keeps yougoing to the future stage.
+              Here's what keeps you going to the future stage.
             </p>
           </div>
           
@@ -24,7 +24,6 @@ export default function DashboardPage() {
               <RefreshCw className="w-5 h-5" />
             </button>
             <div className="flex items-center bg-[#1e1c2a]/80 backdrop-blur-md border border-white/10 rounded-xl overflow-hidden">
-               {/* Small buttons block based on screenshot */}
                <button className="px-3 py-2 text-white/70 hover:text-white hover:bg-white/10 border-r border-white/10"><PanelLeft className="w-4 h-4" /></button>
                <button className="px-3 py-2 text-white/70 hover:text-white hover:bg-white/10 border-r border-white/10"><LayoutGrid className="w-4 h-4" /></button>
                <button className="px-3 py-2 text-white/70 hover:text-white hover:bg-white/10 border-r border-white/10"><LayoutTemplate className="w-4 h-4" /></button>
