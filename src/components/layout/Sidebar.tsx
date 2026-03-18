@@ -1,14 +1,19 @@
+"use client"
 import React from 'react';
 import Link from 'next/link';
 import Image from "next/image";
+import { usePathname } from 'next/navigation';
 import { Home, ClipboardList, User, LayoutGrid,MessageSquare, UserPlus, Settings, LogOut, HelpCircle, Bell } from 'lucide-react';
 
 export default function Sidebar() {
+  const pathname = usePathname();
+
   const navItems = [
-    { name: 'Dashboard', icon: Home, href: '/dashboard', active: true },
+    { name: 'Dashboard', icon: Home, href: '/user-dashboard' },
     { name: 'Questionnaire', icon: ClipboardList, href: '/questionnaire' },
-    { name: 'Profile', icon: User, href: '/profile', badge: 2 },
-    { name: 'Category', icon:LayoutGrid , href: '/category' },
+    { name: 'Profile', icon: User, href: '/user-dashboard/profile', badge: 2 },
+    { name: 'Subscription', icon: LayoutGrid, href: '/user-dashboard/subscription' },
+    { name: 'Category', icon: LayoutGrid, href: '/category' },
     { name: 'Messages', icon: MessageSquare, href: '/messages' },
     { name: 'Invites', icon: UserPlus, href: '/invites' },
     { name: 'Settings', icon: Settings, href: '/settings' },
@@ -18,7 +23,7 @@ export default function Sidebar() {
     <aside className="w-64 h-full flex flex-col border-r border-white/10  backdrop-blur-md relative z-20">
       {/* Logo Area */}
       <div className="p-6 flex items-center gap-3">
-        <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-white to-gray-400 flex items-center justify-center text-black font-bold text-xl leading-none">
+        <div className="w-8 h-8 rounded-full flex items-center justify-center text-black font-bold text-xl leading-none">
            <Image
       src="/logo.png"   
       alt="logo"
@@ -45,27 +50,30 @@ export default function Sidebar() {
 
       {/* Navigation */}
       <nav className="flex-1 px-4 space-y-1">
-        {navItems.map((item) => (
-          <Link
-            key={item.name}
-            href={item.href}
-            className={`flex items-center justify-between px-4 py-3 rounded-xl transition-colors ${
-              item.active 
-                ? 'text-[#FF8B66] font-medium' 
-                : 'text-white/70 hover:text-white hover:bg-white/5'
-            }`}
-          >
-            <div className={`flex items-center gap-3 ${item.active ? 'border-l-2 border-[#FF8B66] -ml-4 pl-[14px]' : ''}`}>
-              <item.icon className="w-5 h-5" />
-              <span>{item.name}</span>
-            </div>
-            {item.badge && (
-              <span className="bg-[#FF4545] text-white text-[10px] font-bold px-2 py-0.5 rounded-full">
-                {item.badge}
-              </span>
-            )}
-          </Link>
-        ))}
+        {navItems.map((item) => {
+          const isActive = pathname === item.href;
+          return (
+            <Link
+              key={item.name}
+              href={item.href}
+              className={`flex items-center justify-between px-4 py-3 rounded-xl transition-colors ${
+                isActive 
+                  ? 'text-[#FF8B66] font-medium bg-white/5' 
+                  : 'text-white/70 hover:text-white hover:bg-white/5'
+              }`}
+            >
+              <div className={`flex items-center gap-3 ${isActive ? 'border-l-2 border-[#FF8B66] -ml-4 pl-[14px]' : ''}`}>
+                <item.icon className="w-5 h-5" />
+                <span>{item.name}</span>
+              </div>
+              {item.badge && (
+                <span className="bg-[#FF4545] text-white text-[10px] font-bold px-2 py-0.5 rounded-full">
+                  {item.badge}
+                </span>
+              )}
+            </Link>
+          );
+        })}
       </nav>
 
       {/* Bottom Actions */}

@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Auth UI",
+  title: "If",
   description: "Figma Auth Design",
 };
 
