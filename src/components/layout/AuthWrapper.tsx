@@ -1,17 +1,14 @@
 import React from "react";
 
-export default function AuthLayout({
+export default function AuthWrapper({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <div className="relative h-screen w-full flex justify-center text-white overflow-hidden">
-
+    <div className="relative h-screen w-full flex justify-center text-white overflow-hidden font-inter">
       {/* Background Image */}
-      <div
-        className="bg-img absolute inset-0 -z-20 bg-cover bg-left bg-no-repeat"
-      />
+      <div className="bg-img absolute inset-0 -z-20 bg-cover bg-left bg-no-repeat" />
 
       {/* Dark overlay */}
       <div className="absolute inset-0 -z-10 bg-black/40" />
@@ -25,7 +22,6 @@ export default function AuthLayout({
           {children}
         </main>
       </div>
-
     </div>
   );
 }

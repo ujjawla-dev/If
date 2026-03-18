@@ -1,6 +1,7 @@
 "use client";
 import React, { InputHTMLAttributes, useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   label?: string;
@@ -8,7 +9,7 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 }
 
 export const Input = React.forwardRef<HTMLInputElement, InputProps>(
-  ({ className = "", label, error, type, ...props }, ref) => {
+  ({ className, label, error, type, ...props }, ref) => {
     const [showPassword, setShowPassword] = useState(false);
     const isPassword = type === "password";
 
@@ -22,7 +23,10 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
         <div className="relative w-full">
           <input
             type={isPassword ? (showPassword ? "text" : "password") : type}
-            className={`w-full h-12 px-4 rounded-xl text-white outline-none input-bg text-sm placeholder:text-white/40 ${className}`}
+            className={cn(
+              "w-full h-12 px-4 rounded-xl text-white outline-none input-bg text-sm placeholder:text-white/40 ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:cursor-not-allowed disabled:opacity-50 transition-colors",
+              className
+            )}
             ref={ref}
             {...props}
           />

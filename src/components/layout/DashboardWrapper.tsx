@@ -2,7 +2,7 @@ import React from "react";
 import Sidebar from "@/components/layout/Sidebar";
 import TopNav from "@/components/layout/TopNav";
 
-export default function DashboardLayout({
+export default function DashboardWrapper({
   children,
 }: {
   children: React.ReactNode;
@@ -22,7 +22,7 @@ export default function DashboardLayout({
       <Sidebar />
 
       {/* Main Content Area */}
-      <div className="flex-1 flex flex-col relative z-10 w-full overflow-y-auto">
+      <div className="flex-1 flex flex-col relative z-10 w-full overflow-y-auto font-inter">
         <TopNav />
         <main className="flex-1 p-6 md:px-8 md:pb-8">
           {children}
