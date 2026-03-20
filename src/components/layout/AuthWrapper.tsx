@@ -13,14 +13,13 @@ export default function AuthWrapper({
       {/* Dark overlay */}
       <div className="absolute inset-0 -z-10 bg-black/40" />
 
-      {/* Bottom gradient glow */}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent via-transparent to-[#ff6a3d]/40" />
-
       {/* Content */}
-      <div className="w-full max-w-md h-full flex flex-col p-6 relative z-10">
-        <main className="flex-1 flex flex-col justify-center">
-          {children}
-        </main>
+      <div className="w-full h-full flex items-center justify-center p-4 relative z-10 overflow-y-auto">
+        <div className="w-full max-w-md bg-white/5 backdrop-blur-xl border border-white/10 rounded-[2.5rem] p-8 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.3)] my-8">
+          <main className="w-full h-full">
+            {children}
+          </main>
+        </div>
       </div>
     </div>
   );

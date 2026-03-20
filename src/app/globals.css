@@ -41,11 +41,11 @@
   }
 
   .dashboard-widget {
-    @apply bg-[#1e1b29]/60 backdrop-blur-xl border border-white/5 rounded-[20px] shadow-xl;
+    @apply bg-[#151221]/75 backdrop-blur-xl border border-white/5 rounded-[20px] shadow-xl;
   }
 
   .dashboard-widget-highlight {
-    background: linear-gradient(135deg, rgba(140, 90, 76, 0.9) 0%, rgba(43, 35, 51, 0.8) 100%);
+    background: linear-gradient(135deg, rgba(100, 70, 60, 0.85) 0%, rgba(35, 30, 50, 0.8) 100%);
     @apply backdrop-blur-xl border border-white/10 rounded-[20px] shadow-xl;
   }
 }

@@ -5,7 +5,12 @@ import Image from "next/image";
 import { usePathname } from 'next/navigation';
 import { Home, ClipboardList, User,LayoutGrid, LayoutList,MessageSquare, UserPlus, Settings, LogOut, HelpCircle, Bell } from 'lucide-react';
 
-export default function Sidebar() {
+interface SidebarProps {
+  isOpen?: boolean;
+  onClose?: () => void;
+}
+
+export default function Sidebar({ isOpen, onClose }: SidebarProps) {
   const pathname = usePathname();
 
   const navItems = [
@@ -20,17 +25,28 @@ export default function Sidebar() {
   ];
 
   return (
-    <aside className="w-64 h-full flex flex-col border-r border-white/10  backdrop-blur-md relative z-20">
+    <aside className={`
+      fixed inset-y-0 left-0 w-64 h-full flex flex-col border-r border-white/10 backdrop-blur-md z-40 transition-transform duration-300 transform lg:relative lg:translate-x-0
+      ${isOpen ? 'translate-x-0' : '-translate-x-full'}
+    `}>
+      {/* Mobile Close Button */}
+      <button 
+        onClick={onClose}
+        className="lg:hidden absolute top-6 right-4 p-2 text-white/60 hover:text-white transition-colors"
+      >
+        <LogOut className="w-6 h-6 rotate-180" />
+      </button>
+
       {/* Logo Area */}
       <div className="p-6 flex items-center gap-3">
         <div className="w-8 h-8 rounded-full flex items-center justify-center text-black font-bold text-xl leading-none">
            <Image
-      src="/logo.png"   
-      alt="logo"
-      width={32}
-      height={32}
-      className="object-cover"
-    />
+            src="/logo.png"   
+            alt="logo"
+            width={32}
+            height={32}
+            className="object-cover"
+          />
         </div>
         <span className="text-xl font-semibold tracking-wide">If</span>
       </div>
@@ -56,6 +72,7 @@ export default function Sidebar() {
             <Link
               key={item.name}
               href={item.href}
+              onClick={onClose}
               className={`flex items-center justify-between px-4 py-3 rounded-xl transition-colors ${
                 isActive 
                   ? 'text-[#FF8B66] font-medium bg-white/5' 

@@ -5,40 +5,36 @@ import AuthWrapper from "@/components/layout/AuthWrapper";
 export default function CreateNewPasswordPage() {
   return (
     <AuthWrapper>
-      <div className="flex flex-col flex-1 h-full pt-4">
-        <div className="mb-10 text-center">
-          <h1 className="text-3xl font-bold mb-4">Create new password</h1>
-          <p className="text-white/80 leading-relaxed text-sm">
-            Your new password must be different from previous used passwords.
-          </p>
+      <div className="mb-10 text-center">
+        <h1 className="text-3xl font-bold mb-2">Reset password</h1>
+        <p className="text-white/70 leading-relaxed text-sm">
+          Your new password must be different from previous used passwords.
+        </p>
+      </div>
+
+      <form className="flex flex-col gap-6 w-full">
+        <div>
+          <Input 
+            label="Password" 
+            type="password" 
+            placeholder="Type your password" 
+          />
+          <p className="text-[10px] text-white/40 mt-1.5 ml-1">Must be at least 8 characters</p>
         </div>
 
-        <form className="flex flex-col gap-6 flex-1 h-full max-w-sm mx-auto w-full">
-          <div>
-            <Input 
-              label="Password" 
-              type="password" 
-              placeholder="Type your password" 
-            />
-            <p className="text-xs text-white/50 mt-2 ml-1">Must be at least 8 characters</p>
-          </div>
-
-          <div>
-            <Input 
-              label="Confirm Password" 
-              type="password" 
-              placeholder="Type your password" 
-            />
-            <p className="text-xs text-white/50 mt-2 ml-1">Both password must match</p>
-          </div>
-          
-          <div className="mt-8 pb-4">
-            <Button variant="primary" type="button" className="w-full">
-              Reset Password
-            </Button>
-          </div>
-        </form>
-      </div>
+        <div>
+          <Input 
+            label="Confirm Password" 
+            type="password" 
+            placeholder="Type your password" 
+          />
+          <p className="text-[10px] text-white/40 mt-1.5 ml-1">Passwords must match</p>
+        </div>
+        
+        <Button variant="primary" type="button" className="w-full shadow-lg mt-4">
+          Reset Password
+        </Button>
+      </form>
     </AuthWrapper>
   );
 }
