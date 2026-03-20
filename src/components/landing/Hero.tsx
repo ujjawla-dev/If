@@ -4,19 +4,19 @@ import { ChevronRight, Play, Sparkles } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="relative pt-40 md:pt-48 pb-12 md:pb-20 overflow-hidden">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section className="relative pt-32 md:pt-40 pb-10 md:pb-16 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center text-center lg:text-left">
           <div className="order-1 lg:order-1">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[10px] md:text-xs font-semibold text-[#E6663E] mb-6 animate-pulse">
               <Sparkles className="w-3 h-3" />
               <span>AI-Guided Legacy Preservation</span>
             </div>
-            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-[4.5rem] font-black tracking-tighter mb-4 md:mb-6 leading-[1.05] md:leading-[1] text-white">
+            <h1 className="text-3xl sm:text-5xl md:text-5xl lg:text-[3.5rem] font-black tracking-tighter mb-4 md:mb-5 leading-[1.05] md:leading-[1] text-white">
               Your Story, <br className="hidden md:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E6663E] to-[#ff9e7d]">Their Legacy.</span>
             </h1>
-            <p className="text-lg md:text-2xl text-white/50 mb-8 md:mb-12 leading-relaxed max-w-2xl font-light mx-auto lg:mx-0">
+            <p className="text-base md:text-xl text-white/50 mb-8 md:mb-10 leading-relaxed max-w-2xl font-light mx-auto lg:mx-0">
               Preserve your life moments, final wishes, and heartfelt messages in a secure digital space designed for the people you love.
             </p>
             <div className="flex flex-col sm:flex-row items-center gap-4 md:gap-6 justify-center lg:justify-start">

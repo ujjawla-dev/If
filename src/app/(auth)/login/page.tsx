@@ -9,26 +9,26 @@ export default function LoginPage() {
   return (
     <AuthWrapper>
       {/* Logo */}
-      <div className="flex justify-center mb-6">
+      <div className="flex justify-center mb-2">
         <Image
           src="/logo.png"
           alt="Logo"
-          width={80}
-          height={80}
+          width={90}
+          height={90}
           className="object-contain"
         />
       </div>
 
       {/* Heading */}
-      <div className="mb-8 text-center">
-        <h1 className="text-3xl font-bold mb-2">Welcome Back!</h1>
+      <div className="mb-4 text-center">
+        <h1 className="text-2xl font-bold mb-1">Welcome Back!</h1>
         <p className="text-white/70 text-sm">
           Login and start manage your account
         </p>
       </div>
 
       {/* Form */}
-      <form className="flex flex-col gap-5 w-full">
+      <form className="flex flex-col gap-3 w-full">
         <Input 
           label="Email" 
           type="email" 

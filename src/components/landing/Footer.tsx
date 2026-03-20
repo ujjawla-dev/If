@@ -4,9 +4,9 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="py-20 border-t border-white/5 bg-[#0a0c1a] relative overflow-hidden">
+    <footer className="py-16 md:py-20 border-t border-white/5 bg-[#0a0c1a] relative overflow-hidden">
       <div className="absolute inset-0 bg-img opacity-5 grayscale pointer-events-none -z-10" />
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20 text-center md:text-left">
           <div className="md:col-span-1">
             <div className="flex items-center gap-3 mb-8 justify-center md:justify-start">

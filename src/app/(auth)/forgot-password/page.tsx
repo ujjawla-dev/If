@@ -13,15 +13,15 @@ export default function ForgotPasswordPage() {
         <Image
           src="/logo.png"
           alt="Logo"
-          width={80}
-          height={80}
+          width={90}
+          height={90}
           className="object-contain"
         />
       </div>
 
       {/* Heading */}
       <div className="mb-8 text-center">
-        <h1 className="text-3xl font-bold mb-2">Reset password</h1>
+        <h1 className="text-2xl font-bold mb-1">Reset password</h1>
         <p className="text-white/70 text-sm leading-relaxed">
           Enter the email associated with your account and we'll send an email with instructions to reset your password.
         </p>
@@ -36,7 +36,7 @@ export default function ForgotPasswordPage() {
         />
 
         <Button variant="primary" type="button" className="w-full mt-2 shadow-lg">
-          Send Instructions
+          Send
         </Button>
 
         <div className="text-center mt-6">

@@ -14,7 +14,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
     const isPassword = type === "password";
 
     return (
-      <div className="w-full flex flex-col gap-2">
+      <div className="w-full flex flex-col gap-1.5">
         {label && (
           <label className="text-sm font-medium text-white/70">
             {label}
@@ -24,7 +24,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
           <input
             type={isPassword ? (showPassword ? "text" : "password") : type}
             className={cn(
-              "w-full h-12 px-4 rounded-xl text-white outline-none input-bg text-sm placeholder:text-white/40 ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:cursor-not-allowed disabled:opacity-50 transition-colors",
+              "w-full h-11 px-4 rounded-xl text-white outline-none input-bg text-sm placeholder:text-white/40 ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:cursor-not-allowed disabled:opacity-50 transition-colors",
               className
             )}
             ref={ref}

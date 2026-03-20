@@ -29,7 +29,7 @@ const SecurityFocus = () => {
     <section id="security" className="py-12 md:py-16 bg-white/[0.02] border-y border-white/5 relative overflow-hidden text-white">
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#E6663E]/5 blur-[120px] rounded-full -z-10 translate-x-1/2 -translate-y-1/2" />
       
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
           <div>
             <span className="text-[#E6663E] font-bold tracking-[0.2em] text-[10px] md:text-xs uppercase mb-6 block">Safe & Sound</span>

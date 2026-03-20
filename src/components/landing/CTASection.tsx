@@ -10,8 +10,8 @@ const CTASection = () => {
           <div className="absolute inset-0 bg-img opacity-10 grayscale -z-10" />
           <div className="absolute -top-1/2 -left-1/2 w-full h-full bg-[#E6663E]/10 blur-[150px] -z-20 rounded-full" />
           
-          <h2 className="text-2xl md:text-5xl font-bold mb-4 md:mb-6 leading-tight  uppercase tracking-tight">Start Building <br className="hidden md:block" />Your Legacy Today</h2>
-          <p className="text-base md:text-xl text-white/50 mb-6 md:mb-8 max-w-2xl mx-auto font-light leading-relaxed">
+          <h2 className="text-2xl md:text-4xl font-bold mb-4 md:mb-6 leading-tight  uppercase tracking-tight">Start Building <br className="hidden md:block" />Your Legacy Today</h2>
+          <p className="text-sm md:text-lg text-white/50 mb-6 md:mb-8 max-w-2xl mx-auto font-light leading-relaxed">
             Join thousands of individuals who are securing their life stories and providing peace for their families with "If".
           </p>
           

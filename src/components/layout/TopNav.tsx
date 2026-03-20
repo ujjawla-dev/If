@@ -9,8 +9,8 @@ interface TopNavProps {
 
 export default function TopNav({ onMenuClick }: TopNavProps) {
   return (
-    <header className="w-full flex items-center justify-between py-4 px-4 md:py-6 md:px-8 relative z-20">
-      <div className="flex items-center gap-4">
+    <header className="w-full flex items-center justify-between py-3 px-4 md:py-4 md:px-8 relative z-20">
+      <div className="flex items-center gap-3">
         {/* Mobile Menu Toggle */}
         <button 
           onClick={onMenuClick}
@@ -25,7 +25,7 @@ export default function TopNav({ onMenuClick }: TopNavProps) {
           <input
             type="text"
             placeholder="Search..."
-            className="w-full bg-[#1c1a24]/80 backdrop-blur-md border border-white/10 rounded-full py-2.5 pl-12 pr-4 text-sm text-white placeholder-white/50 focus:outline-none focus:border-white/30 transition-colors"
+            className="w-full bg-[#1c1a24]/80 backdrop-blur-md border border-white/10 rounded-full py-2 pl-12 pr-4 text-xs text-white placeholder-white/50 focus:outline-none focus:border-white/30 transition-colors"
           />
         </div>
       </div>
@@ -39,15 +39,15 @@ export default function TopNav({ onMenuClick }: TopNavProps) {
 
         {/* Notifications */}
         <button className="relative text-white/70 hover:text-white transition-colors p-1">
-          <Bell className="w-6 h-6" />
-          <span className="absolute top-0 right-0 w-4 h-4 bg-[#FF4545] text-[10px] font-bold rounded-full flex items-center justify-center border-2 border-[#151733]">
+          <Bell className="w-5 h-5" />
+          <span className="absolute top-0 right-0 w-3.5 h-3.5 bg-[#FF4545] text-[9px] font-bold rounded-full flex items-center justify-center border-2 border-[#151733]">
             2
           </span>
         </button>
 
         {/* Invite Button - Simplified on mobile */}
-        <button className="flex items-center gap-2 bg-[#1e1c2a]/80 backdrop-blur-md border border-white/10 p-1 md:px-4 md:py-1.5 rounded-full hover:bg-white/10 transition-colors">
-          <span className="hidden lg:block text-sm font-medium">+ Invite Family & Friend</span>
+        <button className="flex items-center gap-2 bg-[#1e1c2a]/80 backdrop-blur-md border border-white/10 p-1 md:px-3 md:py-1 rounded-full hover:bg-white/10 transition-colors">
+          <span className="hidden lg:block text-xs font-medium">+ Invite Family & Friend</span>
           <img
             src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=faces"
             alt="Jesica"

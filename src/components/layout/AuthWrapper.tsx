@@ -15,7 +15,7 @@ export default function AuthWrapper({
 
       {/* Content */}
       <div className="w-full h-full flex items-center justify-center p-4 relative z-10 overflow-y-auto">
-        <div className="w-full max-w-md bg-white/5 backdrop-blur-xl border border-white/10 rounded-[2.5rem] p-8 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.3)] my-8">
+        <div className="w-full max-w-[400px] bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl sm:rounded-[2rem] p-5 sm:p-7 shadow-[0_20px_50px_rgba(0,0,0,0.3)] my-2">
           <main className="w-full h-full">
             {children}
           </main>

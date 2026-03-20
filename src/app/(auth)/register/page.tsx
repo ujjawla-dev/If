@@ -9,25 +9,25 @@ export default function RegisterPage() {
   return (
     <AuthWrapper>
       {/* Logo */}
-      <div className="flex justify-center mb-4">
+      <div className="flex justify-center mb-2">
         <Image
           src="/logo.png"
           alt="Logo"
-          width={80}
-          height={80}
+          width={90}
+          height={90}
           className="object-contain"
         />
       </div>
 
       {/* Heading */}
-      <div className="mb-6 text-center">
-        <h1 className="text-3xl font-bold mb-2">Join with us!</h1>
-        <p className="text-white/70 leading-relaxed text-sm">
+      <div className="mb-3 text-center">
+        <h1 className="text-2xl font-bold mb-1">Join with us!</h1>
+        <p className="text-white/70 leading-snug text-[13px]">
           Securely store your will and important messages for loved ones.
         </p>
       </div>
 
-      <form className="flex flex-col gap-4">
+      <form className="flex flex-col gap-2.5">
         <Input
           label="Email"
           type="email"
@@ -60,7 +60,7 @@ export default function RegisterPage() {
           placeholder="Type your password"
         />
 
-        <div className="mt-2 text-[11px] text-white/60 leading-normal">
+        <div className="mt-1 text-[11px] text-white/60 leading-normal">
           By pressing "Register Now" button you agree to our{" "}
           <Link href="/terms" className="text-[#E6663E] hover:underline">
             Terms of Use
@@ -74,12 +74,12 @@ export default function RegisterPage() {
         <Button
           variant="primary"
           type="button"
-          className="w-full shadow-lg mt-2"
+          className="w-full shadow-lg mt-1"
         >
           Create Account
         </Button>
 
-        <div className="text-center text-sm pt-4">
+        <div className="text-center text-xs pt-2">
           <span className="text-white/60">
             Already have an account?{" "}
             <Link href="/login" className="text-[#E6663E] font-medium hover:underline">

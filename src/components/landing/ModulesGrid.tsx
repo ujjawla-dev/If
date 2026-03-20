@@ -25,7 +25,7 @@ const ModulesGrid = () => {
 
   return (
     <section id="modules" className="py-12 md:py-16 relative overflow-hidden text-white">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-8 md:mb-12 px-4">
           <div className="max-w-2xl text-center md:text-left">
             <span className="text-[#E6663E] font-bold tracking-[0.2em] text-[10px] md:text-xs uppercase mb-4 block">A Life, Categorized</span>

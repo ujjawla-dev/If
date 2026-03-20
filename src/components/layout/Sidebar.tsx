@@ -38,7 +38,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
       </button>
 
       {/* Logo Area */}
-      <div className="p-6 flex items-center gap-3">
+      <div className="p-4 flex items-center gap-3">
         <div className="w-8 h-8 rounded-full flex items-center justify-center text-black font-bold text-xl leading-none">
            <Image
             src="/logo.png"   
@@ -52,7 +52,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
       </div>
 
       {/* User Profile Snippet */}
-      <div className="px-6 mb-8 flex items-center gap-3">
+      <div className="px-6 mb-4 flex items-center gap-3">
         <img
           src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=faces"
           alt="Jesica Lambor"
@@ -65,7 +65,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
       </div>
 
       {/* Navigation */}
-      <nav className="flex-1 px-4 space-y-1">
+      <nav className="flex-1 px-4 space-y-1 overflow-y-auto sidebar-scroll">
         {navItems.map((item) => {
           const isActive = pathname === item.href;
           return (
@@ -73,7 +73,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
               key={item.name}
               href={item.href}
               onClick={onClose}
-              className={`flex items-center justify-between px-4 py-3 rounded-xl transition-colors ${
+              className={`flex items-center justify-between px-3 py-2.5 rounded-xl transition-colors text-sm ${
                 isActive 
                   ? 'text-[#FF8B66] font-medium bg-white/5' 
                   : 'text-white/70 hover:text-white hover:bg-white/5'
@@ -95,15 +95,15 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
 
       {/* Bottom Actions */}
       <div className="p-4 space-y-1 border-t border-white/10">
-        <button className="flex items-center gap-3 px-4 py-3 text-white/70 hover:text-white hover:bg-white/5 w-full rounded-xl transition-colors">
+        <button className="flex items-center gap-3 px-3 py-2.5 text-white/70 hover:text-white hover:bg-white/5 w-full rounded-xl transition-colors text-sm">
           <UserPlus className="w-5 h-5" />
           <span>Invite Family & Friends</span>
         </button>
-        <button className="flex items-center gap-3 px-4 py-3 text-white/70 hover:text-white hover:bg-white/5 w-full rounded-xl transition-colors">
+        <button className="flex items-center gap-3 px-3 py-2.5 text-white/70 hover:text-white hover:bg-white/5 w-full rounded-xl transition-colors text-sm">
           <HelpCircle className="w-5 h-5" />
           <span>Help</span>
         </button>
-        <button className="flex items-center gap-3 px-4 py-3 text-white/70 hover:text-[#FF4545] hover:bg-white/5 w-full rounded-xl transition-colors mt-4">
+        <button className="flex items-center gap-3 px-3 py-2.5 text-white/70 hover:text-[#FF4545] hover:bg-white/5 w-full rounded-xl transition-colors mt-2 text-sm">
           <LogOut className="w-5 h-5" />
           <span>Logout</span>
         </button>

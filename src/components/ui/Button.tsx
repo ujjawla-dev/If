@@ -24,7 +24,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <button
         ref={ref}
-        className={`h-14 px-8 rounded-full font-medium transition-all hover:opacity-90 active:scale-95 flex items-center justify-center gap-2 ${widthClass} ${variantStyles} ${className}`}
+        className={`h-12 px-8 rounded-full font-medium transition-all hover:opacity-90 active:scale-95 flex items-center justify-center gap-2 ${widthClass} ${variantStyles} ${className}`}
         {...props}
       >
         {children}

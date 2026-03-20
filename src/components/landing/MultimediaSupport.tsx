@@ -6,7 +6,7 @@ const MultimediaSupport = () => {
   return (
     <section className="py-12 md:py-16 bg-[#E6663E]/5 relative overflow-hidden text-white border-y border-white/5">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-[#E6663E]/10 blur-[150px] -z-10 rounded-full animate-pulse" />
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 md:gap-16">
           <div className="text-center lg:text-left mb-8 lg:mb-0">
             <span className="text-[#E6663E] font-bold tracking-[0.2em] text-[10px] md:text-xs uppercase mb-4 block">Legacy Media</span>

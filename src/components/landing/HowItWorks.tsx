@@ -21,8 +21,8 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section id="how-it-works" className="py-12 md:py-20 relative text-white">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="how-it-works" className="py-12 md:py-16 relative text-white">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
         <div className="text-center mb-12 md:mb-16">
           <span className="text-[#E6663E] font-bold tracking-[0.2em] text-[10px] md:text-xs uppercase mb-4 block">Process</span>
           <h2 className="text-2xl md:text-4xl font-bold mb-6 uppercase tracking-tight">How It Works</h2>

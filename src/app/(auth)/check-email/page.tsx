@@ -7,7 +7,7 @@ export default function CheckEmailPage() {
   return (
     <AuthWrapper>
       {/* Envelope Illustration */}
-      <div className="mb-10 w-full flex justify-center scale-90 md:scale-100">
+      <div className="mb-6 w-full flex justify-center scale-90">
         <div className="relative w-48 h-36">
           {/* Back interior */}
           <div className="absolute inset-0 bg-[#e6dbbd] rounded-xl shadow-lg" />
@@ -34,16 +34,15 @@ export default function CheckEmailPage() {
         </div>
       </div>
 
-      {/* Heading */}
-      <div className="text-center mb-8 px-2">
-        <h1 className="text-3xl font-bold mb-4 tracking-tight">Check your email</h1>
-        <p className="text-white/70 leading-relaxed text-sm">
+      <div className="text-center mb-6 px-2">
+        <h1 className="text-2xl font-bold mb-2 tracking-tight">Check your email</h1>
+        <p className="text-white/70 leading-relaxed text-[13px]">
           Please check your inbox and click the received link to reset your password.
         </p>
       </div>
 
       {/* Retry / Note */}
-      <div className="mb-8 text-center text-xs px-4">
+      <div className="mb-6 text-center text-xs px-4">
         <p className="text-white/50 leading-loose">
           Did not receive the email? Check your spam folder,<br />
           or <button type="button" className="text-[#E6663E] font-semibold hover:underline">try another email address.</button>

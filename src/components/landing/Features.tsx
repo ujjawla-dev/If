@@ -36,8 +36,8 @@ const features = [
 
 const Features = () => {
   return (
-    <section id="features" className="py-12 md:py-20 relative bg-white/5">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="features" className="py-12 md:py-16 relative bg-white/5">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
         <div className="text-center mb-12 md:mb-16">
           <span className="text-[#E6663E] font-bold tracking-[0.2em] text-[10px] md:text-xs uppercase mb-4 block">Core Principles</span>
           <h2 className="text-2xl md:text-4xl font-bold uppercase tracking-tight text-white mb-6">Designed for Trust</h2>

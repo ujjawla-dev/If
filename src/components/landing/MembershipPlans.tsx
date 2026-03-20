@@ -29,7 +29,7 @@ const MembershipPlans = () => {
 
   return (
     <section id="membership" className="py-12 md:py-16 relative text-white">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
         <div className="text-center mb-8 md:mb-12">
           <span className="text-[#E6663E] font-bold tracking-[0.2em] text-[10px] md:text-xs uppercase mb-4 block">Membership</span>
           <h2 className="text-2xl md:text-4xl font-bold mb-4  leading-tight uppercase tracking-tight">Choose Your Legacy</h2>
