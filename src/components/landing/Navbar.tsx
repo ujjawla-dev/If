@@ -20,12 +20,14 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'About', href: '/about' },
-    { name: 'How it Works', href: '/how-it-works' },
-    { name: 'Features', href: '/features' },
-    { name: 'Modules', href: '/modules' },
-    { name: 'Security', href: '/security' },
+    // { name: 'How it Works', href: '/how-it-works' },
+    // { name: 'Features', href: '/features' },
+    // { name: 'Modules', href: '/modules' },
+    // { name: 'Security', href: '/security' },
     { name: 'Membership', href: '/membership' },
-    { name: 'FAQ', href: '/faq' },
+    { name: 'Privacy', href: '/privacy' },
+    { name: 'Terms', href: '/terms' },
+    // { name: 'FAQ', href: '/faq' },
   ];
 
   return (

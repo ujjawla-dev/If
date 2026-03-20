@@ -48,7 +48,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
             className="object-cover"
           />
         </div>
-        <span className="text-xl font-semibold tracking-wide">If</span>
+        <span className="text-xl font-semibold tracking-wide text-white">If</span>
       </div>
 
       {/* User Profile Snippet */}
@@ -59,7 +59,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
           className="w-12 h-12 rounded-full border border-white/20 object-cover"
         />
         <div>
-          <h3 className="font-semibold text-sm">Jesica Lambor</h3>
+          <h3 className="font-semibold text-sm text-white">Jesica Lambor</h3>
           <p className="text-xs text-white/50">jesica@email.com</p>
         </div>
       </div>

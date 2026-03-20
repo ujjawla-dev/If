@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -20,10 +21,10 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-bold mb-8 uppercase tracking-widest text-xs">Platform</h4>
             <ul className="space-y-4 text-white/40 text-sm">
-              <li><a href="#" className="hover:text-[#E6663E] transition-colors">How it Works</a></li>
-              <li><a href="#features" className="hover:text-[#E6663E] transition-colors">Features</a></li>
-              <li><a href="#modules" className="hover:text-[#E6663E] transition-colors">Modules</a></li>
-              <li><a href="#membership" className="hover:text-[#E6663E] transition-colors">Membership</a></li>
+              <li><Link href="/how-it-works" className="hover:text-[#E6663E] transition-colors">How it Works</Link></li>
+              <li><Link href="/features" className="hover:text-[#E6663E] transition-colors">Features</Link></li>
+              <li><Link href="/modules" className="hover:text-[#E6663E] transition-colors">Modules</Link></li>
+              <li><Link href="/membership" className="hover:text-[#E6663E] transition-colors">Membership</Link></li>
             </ul>
           </div>
           
@@ -31,9 +32,9 @@ const Footer = () => {
             <h4 className="text-white font-bold mb-8 uppercase tracking-widest text-xs">Help & Support</h4>
             <ul className="space-y-4 text-white/40 text-sm">
               <li><a href="#" className="hover:text-[#E6663E] transition-colors">Contact Support</a></li>
-              <li><a href="#" className="hover:text-[#E6663E] transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="hover:text-[#E6663E] transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-[#E6663E] transition-colors">FAQs</a></li>
+              <li><Link href="/terms" className="hover:text-[#E6663E] transition-colors">Terms of Service</Link></li>
+              <li><Link href="/privacy" className="hover:text-[#E6663E] transition-colors">Privacy Policy</Link></li>
+              <li><Link href="/faq" className="hover:text-[#E6663E] transition-colors">FAQs</Link></li>
             </ul>
           </div>
 
