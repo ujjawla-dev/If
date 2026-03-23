@@ -19,7 +19,7 @@ export default function AdminDashboardPage() {
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-white/5 border border-white/10 p-3 sm:p-4 rounded-xl sm:rounded-2xl backdrop-blur-md mx-2 sm:mx-0">
            <div className="flex items-center gap-3 sm:gap-4 font-inter">
               <div className="relative shrink-0">
-                <img src="https://i.pravatar.cc/150?u=admin" className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl border border-[#E6663E] shadow-lg shadow-[#E6663E]/20" />
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=faces" className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl border border-[#E6663E] shadow-lg shadow-[#E6663E]/20" />
                 <div className="absolute -bottom-1 -right-1 w-3 h-3 sm:w-4 sm:h-4 bg-green-500 border-2 border-[#1A1C1E] rounded-full" />
               </div>
               <div className="min-w-0">
