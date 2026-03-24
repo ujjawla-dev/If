@@ -42,7 +42,7 @@ export default function RegisterPage() {
           />
           <button
             type="button"
-            className="absolute right-0 top-0 text-[#E6663E] text-[10px] font-semibold hover:underline"
+            className="absolute right-0 top-0 text-theme-primary text-[10px] font-semibold hover:underline"
           >
             Verify
           </button>
@@ -62,11 +62,11 @@ export default function RegisterPage() {
 
         <div className="mt-1 text-[11px] text-white/60 leading-normal">
           By pressing "Register Now" button you agree to our{" "}
-          <Link href="/terms" className="text-[#E6663E] hover:underline">
+          <Link href="/terms" className="text-theme-primary hover:underline">
             Terms of Use
           </Link>{" "}
           and{" "}
-          <Link href="/privacy" className="text-[#E6663E] hover:underline">
+          <Link href="/privacy" className="text-theme-primary hover:underline">
             Privacy Policy
           </Link>.
         </div>
@@ -82,7 +82,7 @@ export default function RegisterPage() {
         <div className="text-center text-xs pt-2">
           <span className="text-white/60">
             Already have an account?{" "}
-            <Link href="/login" className="text-[#E6663E] font-medium hover:underline">
+            <Link href="/login" className="text-theme-primary font-medium hover:underline">
               Log In
             </Link>
           </span>

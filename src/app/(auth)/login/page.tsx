@@ -47,7 +47,7 @@ export default function LoginPage() {
               Forget your password?{" "}
               <Link
                 href="/forgot-password"
-                className="text-[#273279] hover:underline"
+                className="text-theme-secondary hover:underline"
               >
                 Reset Password
               </Link>
@@ -65,7 +65,7 @@ export default function LoginPage() {
             Don't have an account?{" "}
             <Link
               href="/register"
-              className="text-[#E6663E] font-medium hover:underline"
+              className="text-theme-primary font-medium hover:underline"
             >
               Register
             </Link>

@@ -97,7 +97,7 @@ export const SubscriberBarChart = ({ value, trend }: any) => {
         <div className="flex-1 flex items-end justify-between gap-1 px-0.5 relative">
              {data.map((h, i) => (
                 <div key={i} className={`flex-1 flex flex-col items-center h-full justify-end group ${i > 5 ? 'hidden xs:flex' : 'flex'}`}>
-                    <div className="w-4 sm:w-6 bg-[#E6663E] rounded-t-sm opacity-60 group-hover:opacity-100" style={{ height: `${h}%` }} />
+                    <div className="w-4 sm:w-6 bg-theme-primary rounded-t-sm opacity-60 group-hover:opacity-100" style={{ height: `${h}%` }} />
                     <span className="text-[8px] text-white/20 font-bold mt-1.5">{months[i]}</span>
                 </div>
              ))}
@@ -165,10 +165,10 @@ export const ActivityTable = () => {
         <div className="dashboard-widget overflow-hidden flex flex-col h-full min-h-[300px]">
             <div className="px-4 py-3 border-b border-white/5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-white/[0.01]">
                 <div className="flex gap-4 sm:gap-6 overflow-x-auto scrollbar-hide shrink-0 -mb-px">
-                    <button className="text-[10px] sm:text-[11px] font-black uppercase tracking-[0.1em] text-[#E6663E] border-b-2 border-[#E6663E] pb-2 whitespace-nowrap">Latest Registered</button>
+                    <button className="text-[10px] sm:text-[11px] font-black uppercase tracking-[0.1em] text-theme-primary border-b-2 border-theme-primary pb-2 whitespace-nowrap">Latest Registered</button>
                     <button className="text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.1em] text-white/30 pb-2 whitespace-nowrap">Latest Subscribe</button>
                 </div>
-                <button className="text-[9px] sm:text-[10px] text-[#E6663E] font-black uppercase flex items-center gap-1 self-end sm:self-auto shrink-0 bg-[#E6663E]/5 sm:bg-transparent px-2 py-1 sm:p-0 rounded sm:rounded-none">
+                <button className="text-[9px] sm:text-[10px] text-theme-primary font-black uppercase flex items-center gap-1 self-end sm:self-auto shrink-0 bg-theme-primary/5 sm:bg-transparent px-2 py-1 sm:p-0 rounded sm:rounded-none">
                     VIEW ALL <ChevronRight className="w-3 h-3" />
                 </button>
             </div>
@@ -191,7 +191,7 @@ export const ActivityTable = () => {
                                     <div className="flex items-center gap-3">
                                         <img src={user.avatar} className="w-8 h-8 rounded-lg border border-white/10 shrink-0" />
                                         <div className="min-w-0">
-                                            <p className="text-[11px] sm:text-[12px] font-bold text-white group-hover:text-[#E6663E] transition-colors truncate">{user.name}</p>
+                                            <p className="text-[11px] sm:text-[12px] font-bold text-white group-hover:text-theme-primary transition-colors truncate">{user.name}</p>
                                             <p className="text-[8px] sm:text-[9px] text-white/40 tracking-tight truncate">{user.email}</p>
                                         </div>
                                     </div>

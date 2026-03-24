@@ -45,8 +45,8 @@ const Navbar = () => {
             <div className="relative w-8 h-8 md:w-10 md:h-10">
               <Image src="/logo.png" alt="If" fill className="object-contain" priority />
             </div>
-            <span className="text-xl md:text-2xl font-bold tracking-tight text-white group-hover:text-[#E6663E] transition-colors leading-none">
-              If<span className="text-[#E6663E]">.</span>
+            <span className="text-xl md:text-2xl font-bold tracking-tight text-white group-hover:text-theme-primary transition-colors leading-none">
+              If<span className="text-theme-primary">.</span>
             </span>
           </Link>
 
@@ -63,7 +63,7 @@ const Navbar = () => {
                   }`}
                 >
                   {link.name}
-                  <div className={`absolute -bottom-2 left-0 w-full h-0.5 bg-[#E6663E] transition-all duration-300 origin-left ${
+                  <div className={`absolute -bottom-2 left-0 w-full h-0.5 bg-theme-primary transition-all duration-300 origin-left ${
                     isActive ? 'scale-x-100 opacity-100' : 'scale-x-0 opacity-0 group-hover:scale-x-100 group-hover:opacity-100'
                   } shadow-[0_0_10px_rgba(230,102,62,0.5)]`} />
                 </Link>
@@ -81,7 +81,7 @@ const Navbar = () => {
             </Link>
             <Link 
               href="/register" 
-              className="px-3 py-2 bg-[#E6663E] hover:bg-[#ff7b52] transition-all rounded-xl text-sm lg:text-base font-bold text-white shadow-lg shadow-[#E6663E]/20 active:scale-95 whitespace-nowrap"
+              className="px-3 py-2 bg-theme-primary hover:bg-theme-primary-hover transition-all rounded-xl text-sm lg:text-base font-bold text-white shadow-lg shadow-theme-primary/20 active:scale-95 whitespace-nowrap"
             >
               Get Started
             </Link>
@@ -112,7 +112,7 @@ const Navbar = () => {
               <Image src="/logo.png" alt="If" fill className="object-contain" priority />
             </div>
             <span className="text-xl font-bold text-white">
-              If<span className="text-[#E6663E]">.</span>
+              If<span className="text-theme-primary">.</span>
             </span>
           </Link>
           <button
@@ -134,7 +134,7 @@ const Navbar = () => {
                 className="text-lg font-medium text-white/70 hover:text-white py-5 border-b border-white/5 flex items-center justify-between group"
               >
                 {link.name}
-                <ChevronRight className="w-5 h-5 text-white/20 group-hover:text-[#E6663E] transition-colors" />
+                <ChevronRight className="w-5 h-5 text-white/20 group-hover:text-theme-primary transition-colors" />
               </Link>
             ))}
           </div>
@@ -153,7 +153,7 @@ const Navbar = () => {
             <Link 
               href="/register" 
               onClick={() => setIsOpen(false)}
-              className="w-full py-4.5 text-center font-bold text-white bg-[#E6663E] rounded-xl shadow-lg shadow-[#E6663E]/20 active:scale-95"
+              className="w-full py-4.5 text-center font-bold text-white bg-theme-primary rounded-xl shadow-lg shadow-theme-primary/20 active:scale-95"
             >
               Get Started
             </Link>

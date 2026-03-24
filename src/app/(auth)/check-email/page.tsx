@@ -45,7 +45,7 @@ export default function CheckEmailPage() {
       <div className="mb-6 text-center text-xs px-4">
         <p className="text-white/50 leading-loose">
           Did not receive the email? Check your spam folder,<br />
-          or <button type="button" className="text-[#E6663E] font-semibold hover:underline">try another email address.</button>
+          or <button type="button" className="text-theme-primary font-semibold hover:underline">try another email address.</button>
         </p>
       </div>
 

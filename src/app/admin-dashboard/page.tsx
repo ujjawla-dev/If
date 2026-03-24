@@ -19,7 +19,7 @@ export default function AdminDashboardPage() {
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-white/5 border border-white/10 p-3 sm:p-4 rounded-xl sm:rounded-2xl backdrop-blur-md mx-2 sm:mx-0">
            <div className="flex items-center gap-3 sm:gap-4 font-inter">
               <div className="relative shrink-0">
-                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=faces" className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl border border-[#E6663E] shadow-lg shadow-[#E6663E]/20" />
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=faces" className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl border border-theme-primary shadow-lg shadow-theme-primary/20" />
                 <div className="absolute -bottom-1 -right-1 w-3 h-3 sm:w-4 sm:h-4 bg-green-500 border-2 border-[#1A1C1E] rounded-full" />
               </div>
               <div className="min-w-0">
@@ -36,7 +36,7 @@ export default function AdminDashboardPage() {
               <div className="flex items-center gap-2">
                   <button className="p-2 bg-white/5 border border-white/10 rounded-lg hover:bg-white/10 transition-colors relative">
                      <Bell className="w-4 h-4 text-white/60" />
-                     <span className="absolute top-1 right-1 w-2 h-2 bg-[#E6663E] rounded-full border border-[#1A1C1E]" />
+                     <span className="absolute top-1 right-1 w-2 h-2 bg-theme-primary rounded-full border border-[#1A1C1E]" />
                   </button>
                   <button className="p-2 bg-white/5 border border-white/10 rounded-lg hover:bg-white/10 transition-colors">
                      <Settings className="w-4 h-4 text-white/60" />
@@ -51,7 +51,7 @@ export default function AdminDashboardPage() {
           <StatCard title="Active Now" value="5,000" trend="up" trendValue="+200" icon={UserCheck} color="#00D2D2" sparkData={[60, 50, 70, 65, 85, 75]} />
           <StatCard title="Sub-Rate" value="75.2%" trend="down" trendValue="-2.4%" icon={Star} color="#9D4EDD" sparkData={[80, 70, 60, 50, 55, 45]} />
           <StatCard title="Revenue" value="$42.5k" trend="up" trendValue="+$20k" icon={DollarSign} color="#2ECC71" sparkData={[30, 45, 55, 40, 60, 90]} />
-          <StatCard title="Tickets" value="250" trend="up" trendValue="+50" icon={HelpCircle} color="#FF4545" sparkData={[40, 35, 45, 50, 40, 60]} />
+          <StatCard title="Tickets" value="250" trend="up" trendValue="+50" icon={HelpCircle} color="var(--theme-danger)" sparkData={[40, 35, 45, 50, 40, 60]} />
         </div>
 
         {/* Dynamic Charts Section: Full Stacking on Mobile */}
@@ -68,7 +68,7 @@ export default function AdminDashboardPage() {
             </div>
             {/* Sidebar "Quick Insight": Hidden on very small screens or integrated better */}
             <div className="dashboard-widget p-5 flex flex-col gap-5 border border-white/10 bg-gradient-to-br from-white/[0.03] to-transparent">
-                <h3 className="text-[11px] font-black uppercase tracking-[0.2em] text-[#E6663E]">Quick Insights</h3>
+                <h3 className="text-[11px] font-black uppercase tracking-[0.2em] text-theme-primary">Quick Insights</h3>
                 
                 <div className="flex flex-col gap-4">
                     <div className="flex items-start gap-3">
@@ -93,7 +93,7 @@ export default function AdminDashboardPage() {
                     </div>
                 </div>
                 
-                <button className="w-full py-2 bg-[#E6663E]/10 border border-[#E6663E]/20 text-[#E6663E] text-[10px] font-black uppercase rounded-lg hover:bg-[#E6663E] hover:text-white transition-all">
+                <button className="w-full py-2 bg-theme-primary/10 border border-theme-primary/20 text-theme-primary text-[10px] font-black uppercase rounded-lg hover:bg-theme-primary hover:text-white transition-all">
                     Generate Report
                 </button>
             </div>

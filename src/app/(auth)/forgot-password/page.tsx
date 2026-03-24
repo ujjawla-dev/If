@@ -40,7 +40,7 @@ export default function ForgotPasswordPage() {
         </Button>
 
         <div className="text-center mt-6">
-          <Link href="/login" className="text-[#E6663E] text-sm font-medium hover:underline flex items-center justify-center gap-2">
+          <Link href="/login" className="text-theme-primary text-sm font-medium hover:underline flex items-center justify-center gap-2">
             Back to Log In
           </Link>
         </div>

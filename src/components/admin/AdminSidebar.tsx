@@ -66,11 +66,11 @@ export default function AdminSidebar({ isOpen, onClose }: AdminSidebarProps) {
               onClick={onClose}
               className={`flex items-center justify-between px-3 py-2.5 rounded-xl transition-colors text-sm ${
                 isActive 
-                  ? 'text-[#FF8B66] font-medium bg-white/5' 
+                  ? 'text-theme-primary-light font-medium bg-white/5' 
                   : 'text-white/70 hover:text-white hover:bg-white/5'
               }`}
             >
-              <div className={`flex items-center gap-3 ${isActive ? 'border-l-2 border-[#FF8B66] -ml-4 pl-[14px]' : ''}`}>
+              <div className={`flex items-center gap-3 ${isActive ? 'border-l-2 border-theme-primary-light -ml-4 pl-[14px]' : ''}`}>
                 <item.icon className="w-5 h-5" />
                 <span>{item.name}</span>
               </div>
@@ -85,7 +85,7 @@ export default function AdminSidebar({ isOpen, onClose }: AdminSidebarProps) {
           <UserPlus className="w-5 h-5" />
           <span>Invite Team</span>
         </button>
-        <button className="flex items-center gap-3 px-3 py-2.5 text-white/70 hover:text-[#FF4545] hover:bg-white/5 w-full rounded-xl transition-colors mt-2 text-sm text-left">
+        <button className="flex items-center gap-3 px-3 py-2.5 text-white/70 hover:text-theme-danger hover:bg-white/5 w-full rounded-xl transition-colors mt-2 text-sm text-left">
           <LogOut className="w-5 h-5" />
           <span>Logout</span>
         </button>

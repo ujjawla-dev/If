@@ -80,11 +80,11 @@ export default function DashboardPage() {
             <div className="dashboard-widget p-4 md:p-5">
               <h3 className="text-base font-semibold mb-3">Memory of the Day</h3>
               <div className="w-full h-32 md:h-40 rounded-xl overflow-hidden mb-3 relative">
-                <img 
+                {/* <img 
                   src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800&h=400&fit=crop" 
                   alt="Wedding" 
                   className="w-full h-full object-cover"
-                />
+                /> */}
               </div>
               <h4 className="text-xl font-semibold mb-2">Our Wedding Day</h4>
               <p className="text-white/70 text-sm mb-6 leading-relaxed">
@@ -161,8 +161,8 @@ export default function DashboardPage() {
             <div className="mt-2 flex flex-col gap-4">
               <div className="flex items-center justify-between px-2">
                 <h3 className="text-lg font-semibold">Questions</h3>
-                <button className="text-xs text-[#E6663E] font-bold uppercase tracking-widest hover:text-white transition-colors">
-                  View all
+                <button className="text-xs text-[#323666]  tracking-widest hover:text-white transition-colors">
+                  View all 
                 </button>
               </div>
               
